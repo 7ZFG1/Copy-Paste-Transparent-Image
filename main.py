@@ -52,16 +52,11 @@ class copy_paste:
 
 if __name__ == "__main__":
 
-    # destination_img_folder_path = "/destination_img/" #enter your destination img folder path
-    # source_img_path = "/source_img/logo_IG.png" #enter your source img path
-    # output_path = "/copy_paste/output" #enter your output folder path
-    # img_liste = os.listdir(destination_img_folder_path)
-
-    destination_img_folder_path = "/home/furkan/Desktop/copy_paste/destination_img/" #enter your destination img folder path
-    source_img_path = "/home/furkan/Desktop/copy_paste/source_img/source_img.png" #enter your source img path
-    output_path = "/home/furkan/Desktop/copy_paste/output" #enter your output folder path
+    destination_img_folder_path = "/destination_img/" #enter your destination img folder path
+    source_img_path = "/source_img/source_img.png" #enter your source img path
+    output_path = "/copy_paste/output" #enter your output folder path
     img_liste = os.listdir(destination_img_folder_path)
-    
+
     source_img = cv2.imread(source_img_path,cv2.IMREAD_UNCHANGED)
 
     for i in img_liste:
